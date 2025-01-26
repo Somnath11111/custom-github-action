@@ -1,0 +1,12 @@
+name: PR Checker
+on:
+  pull_request:
+    types: [opened]
+jobs:
+  check-pr:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Run Action
+        uses: actions/checkout@v3
+      - name: Hello World
+        run: echo "PR Created!"
